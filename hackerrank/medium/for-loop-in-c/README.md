@@ -52,7 +52,7 @@ Print the appropriate English representation,`even`, or `odd`, based on the cond
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-10T12:47:39.488Z  
+**Submitted:** 2026-10-10T12:46:19.206Z  
 
 ```c
 #include <stdio.h>
