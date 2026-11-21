@@ -42,26 +42,26 @@ Output: [[1,4],[2,5],[3,6]]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 15.1 MB (beats 55.69%)  
-**Submitted:** 2026-11-21T05:57:05.533Z  
+**Memory:** 15 MB (beats 80.75%)  
+**Submitted:** 2026-11-21T05:58:55.685Z  
 
 ```cpp
 
 class Solution {
 public:
     vector<vector<int>> transpose(vector<vector<int>>& matrix) {
-        int rows = matrix.size();
-        int cols = matrix[0].size();
+        int m = matrix.size();
+        int n = matrix[0].size();
 
-        vector<vector<int>> result(cols, vector<int>(rows));
+        vector<vector<int>> ans(n, vector<int>(m));
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                result[j][i] = matrix[i][j];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                ans[j][i] = matrix[i][j];
             }
         }
 
-        return result;
+        return ans;
     }
 };
 
